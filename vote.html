@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Vote on Options</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="vote-page">
+    <header>
+        <h1>Vote on the Options</h1>
+    </header>
+    <main>
+        <section>
+            <h2 id="topic-title"></h2>
+            <div id="options-buttons"></div>
+        
+            <section id="feedback-section">
+                <button id="give-feedback">Give Feedback About the topic and choices</button>
+                <textarea id="feedback-text" placeholder="Write your feedback here..." rows="4" cols="50" style="display: none;"></textarea>
+                <button id="submit-feedback" style="display: none;">Submit Feedback</button>
+                <button id="simulate-users" class="simulate-button">Simulate Multiple Users</button>
+
+
+            </section>
+            <button id="finalize-vote">Finalize Decision</button>
+        </section>
+        
+    </main>
+    <p>Unsure About your vote? </p>
+    <a href="discussion-board.html" class="button">Join the discussion!</a>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>

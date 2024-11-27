@@ -1,0 +1,429 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+section {
+    margin-bottom: 15px;
+}
+
+/* Topic and Options */
+#topic-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #555;
+    text-align: center;
+}
+
+/* Options Buttons */
+#options-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.option-button {
+    padding: 10px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: left;
+}
+
+.option-button:hover {
+    background-color: #45a049;
+}
+
+.option-button:focus {
+    outline: none;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+/* Feedback Section */
+#feedback-section {
+    margin-top: 20px;
+    text-align: center;
+    border-top: 2px solid #eee;
+    padding-top: 15px;
+}
+
+#give-feedback {
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+#give-feedback:hover {
+    background-color: #007bb5;
+}
+
+#feedback-text {
+    width: 100%;
+    margin-top: 8px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    display: none;
+}
+
+#submit-feedback {
+    padding: 10px 20px;
+    background-color: #45a049;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+    transition: background-color 0.3s;
+    display: none;
+}
+
+#submit-feedback:hover {
+    background-color: #388e3c;
+}
+
+#finalize-vote {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+    width: 25%; 
+    max-width: 200px;
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block; 
+    text-align: center; 
+}
+
+/* Mobile-specific adjustments */
+@media screen and (max-width: 600px) {
+    #finalize-vote {
+        width: 80%; 
+        font-size: 16px; 
+        padding: 12px 20px; 
+    }
+}
+
+
+
+#finalize-vote:hover {
+    background-color: #45a049;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+/* Form Elements */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+    color: #555;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+input[type="text"]::placeholder, textarea::placeholder {
+    color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+
+    #give-feedback {
+        font-size: 12px;
+    }
+
+    #feedback-text {
+        font-size: 12px;
+    }
+
+    #submit-feedback {
+        font-size: 12px;
+    }
+
+    .option-button {
+        font-size: 12px;
+    }
+}
+
+/* Discussion Board Styles */
+#discussion-board-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+/* Main Section */
+main {
+    width: 100%;
+    max-width: 800px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Notes Section */
+#notes-container {
+    margin-top: 15px;
+}
+
+.note {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    border-left: 5px solid #4CAF50;
+    font-size: 14px;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Button Styling for Links */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+.simulate-button {
+    display: inline-block;
+    position: fixed;
+    bottom: 20px; /* Adjusted to avoid being cut off on smaller screens */
+    right: 1px;
+    min-width: 100px; /* Keeps a readable size on all devices */
+    padding: 10px 15px;
+    background-color: #d04242;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 1000; 
+}
+
+
+.simulate-active {
+    background-color: #673ab7;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #f0f8ff, #e0f7fa);
+    position: relative;
+}
+
+#topic-title {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.options-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 20px;
+}
+
+.option-column {
+    flex: 1;
+    padding: 10px;
+    margin: 0 10px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.option-column h3 {
+    text-align: center;
+}
+
+.option-comments, .option-pros-cons {
+    margin-top: 20px;
+}
+
+.comment-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.comment-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.comment-button:hover {
+    background-color: #4CAF50;
+}
+.option-pros-cons {
+    margin-top: 20px;
+}
+
+.pro-con-section {
+    margin-top: 15px;
+}
+
+.pros, .cons {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #ddd;
+    background-color: #f7f7f7;
+}
+
+.pros {
+    background-color: #d4edda;
+    border-color: #28a745;
+}
+
+.cons {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+}
+
+/* Profile Picture Styling */
+.pfp {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url('generic-pfp.png');
+    background-size: cover;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Styling for each Pro/Con with PFP */
+.pro, .con {
+    font-size: 1em;
+    margin-left: 10px;
+    color: #333;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+}
+
+/* For pro/con sections to ensure items are aligned */
+.pro-con-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.voter {
+    padding: 8px;
+    cursor: pointer;
+    margin: 4px 0;
+    background-color: #f0f0f0;
+}
+
+.voter.selected {
+    background-color: #87cefa;  /* Highlight selected voter */
+}
+
+#selected-voters li {
+    list-style-type: none;
+    padding: 5px 0;
+}
